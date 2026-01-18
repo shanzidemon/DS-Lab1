@@ -6,4 +6,5 @@ a.out
 # Ignore object files
 *.o
 # Ignore temporary build files
-*.tmp
+*.tmp|
+.DS_Store
