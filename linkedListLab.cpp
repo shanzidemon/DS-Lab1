@@ -7,8 +7,6 @@ struct Node {
 };
 
 Node* head = NULL;
-
-
 void add_item(int value) {
     Node* n = new Node();
     n->data = value;
@@ -18,14 +16,12 @@ void add_item(int value) {
         head = n;
         return;
     }
-
     Node* temp = head;
     while (temp->next != NULL) {
         temp = temp->next;
     }
     temp->next = n;
 }
-
 void remove_item(int value) {
     if (head == NULL) return;
 
@@ -48,7 +44,6 @@ void remove_item(int value) {
     delete del;
 }
 
-
 void search_item(int value) {
     Node* temp = head;
     while (temp != NULL) {
@@ -60,7 +55,6 @@ void search_item(int value) {
     }
     cout << "Not Found\n";
 }
-
 void update_item(int oldValue, int newValue) {
     Node* temp = head;
     while (temp != NULL) {
@@ -80,21 +74,14 @@ void display() {
     }
     cout << endl;
 }
-
 int main() {
     add_item(1);
     add_item(2);
     add_item(3);
-
     display();
-
     search_item(2);
-
     update_item(2, 20);
     display();
-
     remove_item(1);
     display();
-
-    return 0;
 }

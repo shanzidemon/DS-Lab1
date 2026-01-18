@@ -76,25 +76,5 @@ void displayQueue() {
 
 int main() {
 
-    // STACK
-    push(10);
-    push(20);
-    push(30);
-    displayStack();
-
-    pop();
-    displayStack();
-
-    cout << endl;
-
-
-    enqueue(1);
-    enqueue(2);
-    enqueue(3);
-    displayQueue();
-
-    dequeue();
-    displayQueue();
-
-    return 0;
+   
 }
