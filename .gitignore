@@ -1,0 +1,9 @@
+# Ignore compiled executable files (Linux / macOS)
+a.out
+*.out
+# Ignore Windows executable files
+*.exe
+# Ignore object files
+*.o
+# Ignore temporary build files
+*.tmp
